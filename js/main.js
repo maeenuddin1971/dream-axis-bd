@@ -1,0 +1,1 @@
+function submitDemo(e){e.preventDefault();alert("Thank you for contacting Dream Axis BD. Please connect this form to WhatsApp, email or your backend before going live.");}

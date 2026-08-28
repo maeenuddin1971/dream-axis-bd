@@ -1,0 +1,435 @@
+ :root {
+     --navy: #061b2e;
+     --green: #0ca66a;
+     --green2: #50d6a0;
+     --ink: #122033;
+     --muted: #687586;
+     --soft: #f4f8f6
+ }
+
+ * {
+     box-sizing: border-box
+ }
+
+ html {
+     scroll-behavior: smooth
+ }
+
+ .brand-logo {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
+ body {
+     font-family: Inter, sans-serif;
+     color: var(--ink);
+     margin: 0
+ }
+
+ .navbar {
+     background: rgba(6, 27, 46, .97);
+     padding: 14px 0;
+     z-index: 20
+ }
+
+ .navbar-brand {
+     color: #fff;
+     font-weight: 800;
+     font-size: 1.35rem
+ }
+
+ .navbar-brand b {
+     color: var(--green2)
+ }
+
+ .logo-mark {
+     display: inline-grid;
+     place-items: center;
+     width: 34px;
+     height: 34px;
+     margin-right: 8px;
+     border-radius: 8px;
+     background: var(--green);
+     font-size: .75rem
+ }
+
+ .nav-link {
+     color: #dbe6ee !important;
+     font-weight: 500
+ }
+
+ .btn-brand {
+     background: var(--green);
+     color: #fff;
+     border: 0;
+     border-radius: 7px;
+     padding: 12px 22px;
+     font-weight: 700
+ }
+
+ .btn-brand:hover {
+     background: #088957;
+     color: #fff
+ }
+
+ .hero {
+     background: linear-gradient(90deg, rgba(3, 20, 34, .97), rgba(3, 20, 34, .66), rgba(3, 20, 34, .18)), url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=2000&q=85') center/cover;
+     color: #fff;
+     min-height: 100vh
+ }
+
+ .hero h1 {
+     font-size: clamp(3.1rem, 7vw, 6.3rem);
+     line-height: .98;
+     font-weight: 800;
+     letter-spacing: -.055em
+ }
+
+ .hero h1 em {
+     font-family: 'Playfair Display', serif;
+     color: var(--green2);
+     font-style: normal
+ }
+
+ .lead {
+     max-width: 760px;
+     color: #d8e4ec;
+     font-size: 1.12rem;
+     line-height: 1.75
+ }
+
+ .eyebrow {
+     font-size: .72rem;
+     font-weight: 800;
+     letter-spacing: .17em;
+     color: #1B4D6B
+ }
+
+ .eyebrow.dark {
+     color: #078a5a
+ }
+
+ .hero-trust {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 22px;
+     color: #d8e4ec;
+     font-size: .85rem
+ }
+
+ .section {
+     padding: 100px 0
+ }
+
+ .section-sm {
+     padding: 55px 0
+ }
+
+ .soft {
+     background: var(--soft)
+ }
+
+ .section-head {
+     display: flex;
+     justify-content: space-between;
+     align-items: end;
+     gap: 50px;
+     margin-bottom: 45px
+ }
+
+ .section-head>p {
+     max-width: 500px;
+     color: var(--muted);
+     line-height: 1.75
+ }
+
+ .section h2 {
+     font-size: clamp(2.2rem, 4vw, 4rem);
+     line-height: 1.05;
+     letter-spacing: -.045em;
+     font-weight: 800;
+     margin: 10px 0 25px
+ }
+
+ .section p {
+     line-height: 1.75;
+     color: var(--muted)
+ }
+
+ .big-copy {
+     font-size: 1.18rem
+ }
+
+ .about-card {
+     background: var(--navy);
+     color: #fff;
+     padding: 48px;
+     border-radius: 18px
+ }
+
+ .about-card h3 {
+     font-size: 2rem;
+     line-height: 1.25;
+     margin: 15px 0
+ }
+
+ .about-card p {
+     color: #c9d7e1
+ }
+
+ .service-card {
+     height: 100%;
+     background: #fff;
+     border: 1px solid #e1eae5;
+     border-radius: 15px;
+     padding: 30px;
+     transition: .2s
+ }
+
+ .service-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 18px 40px #12203312
+ }
+
+ .service-icon {
+     font-size: 2rem;
+     margin-bottom: 20px
+ }
+
+ .service-card h3,
+ .country-card h3,
+ .story-card h3 {
+     font-weight: 800
+ }
+
+ .country-card {
+     height: 100%;
+     padding: 28px;
+     border: 1px solid #e1e8e5;
+     border-radius: 15px;
+     background: #fff
+ }
+
+ .flag {
+     font-size: 2.4rem
+ }
+
+ .country-card p {
+     margin-bottom: 8px
+ }
+
+ .country-card strong {
+     display: block;
+     color: #078a5a;
+     font-size: 1.05rem
+ }
+
+ .country-card small {
+     display: block;
+     color: #7a8793;
+     margin-top: 8px;
+     line-height: 1.5
+ }
+
+ .india-card {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 30px;
+     background: var(--navy);
+     color: #fff;
+     padding: 30px;
+     border-radius: 15px
+ }
+
+ .india-card p {
+     color: #c8d5de;
+     margin: 5px 0 0
+ }
+
+ .india-card .flag {
+     font-size: 1.7rem;
+     margin-right: 10px
+ }
+
+ .disclaimer {
+     font-size: .8rem !important;
+     color: #7a8793 !important
+ }
+
+ .story-card {
+     background: #fff;
+     border-radius: 15px;
+     padding: 32px;
+     height: 100%;
+     border: 1px solid #e1e9e5
+ }
+
+ .story-card span {
+     font-weight: 800;
+     color: #078a5a
+ }
+
+ .story-card h3 {
+     margin-top: 22px
+ }
+
+ .notice {
+     border-left: 4px solid var(--green);
+     background: #fff;
+     padding: 25px
+ }
+
+ .notice p {
+     margin: 5px 0 0
+ }
+
+ .feature-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 32px
+ }
+
+ .feature-grid div {
+     border-top: 2px solid #dce6e1;
+     padding-top: 17px
+ }
+
+ .feature-grid b {
+     color: #078a5a
+ }
+
+ .feature-grid h4 {
+     font-weight: 800;
+     margin: 10px 0 5px
+ }
+
+ .feature-grid p {
+     font-size: .9rem
+ }
+
+ .contact-section {
+     background: var(--navy);
+     color: #fff;
+     padding: 90px 0
+ }
+
+ .contact-section h2 {
+     font-size: clamp(2.4rem, 4vw, 4.5rem);
+     line-height: 1.05;
+     letter-spacing: -.045em
+ }
+
+ .contact-section p {
+     color: #c9d6df;
+     line-height: 1.7
+ }
+
+ .contact-details {
+     margin-top: 35px
+ }
+
+ .contact-details a,
+ .facebook-link {
+     color: #72e1b4;
+     text-decoration: none
+ }
+
+ .facebook-link {
+     font-weight: 700
+ }
+
+ .contact-form {
+     background: #fff;
+     padding: 32px;
+     border-radius: 15px;
+     color: var(--ink)
+ }
+
+ .contact-form h3 {
+     font-weight: 800;
+     margin-bottom: 20px
+ }
+
+ .contact-form input,
+ .contact-form select,
+ .contact-form textarea {
+     width: 100%;
+     border: 1px solid #d9e2df;
+     border-radius: 7px;
+     padding: 14px;
+     margin-bottom: 14px;
+     font: inherit
+ }
+
+ .contact-form textarea {
+     resize: vertical
+ }
+
+ .legal {
+     background: #eef4f1
+ }
+
+ .legal h4 {
+     font-weight: 800
+ }
+
+ .legal a {
+     display: block;
+     color: #078a5a;
+     text-decoration: none;
+     margin: 8px 0
+ }
+
+ .legal p {
+     font-size: .9rem
+ }
+
+ footer {
+     background: #041321;
+     color: #b9c7d0;
+     padding: 25px 0
+ }
+
+ footer strong {
+     color: #fff
+ }
+
+ footer small {
+     font-size: .78rem
+ }
+
+ @media(max-width:768px) {
+     .section {
+         padding: 70px 0
+     }
+
+     .section-head {
+         display: block
+     }
+
+     .section-head>p {
+         margin-top: 20px
+     }
+
+     .india-card {
+         display: block
+     }
+
+     .india-card .btn {
+         margin-top: 20px
+     }
+
+     .feature-grid {
+         grid-template-columns: 1fr
+     }
+
+     .hero {
+         min-height: 850px
+     }
+
+     .hero-trust {
+         gap: 10px
+     }
+ }
