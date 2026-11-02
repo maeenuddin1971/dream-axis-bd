@@ -702,6 +702,60 @@ a {
     border: 1px solid var(--line)
 }
 
+.pay-steps {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    margin-bottom: 18px;
+    font-size: .86rem
+}
+
+.pay-steps summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 14px;
+    font-weight: 600;
+    color: var(--navy-ink);
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.pay-steps summary::-webkit-details-marker {
+    display: none
+}
+
+.pay-steps summary::after {
+    content: "\F282";
+    font-family: "bootstrap-icons";
+    margin-left: auto;
+    font-size: .8rem;
+    transition: transform .2s
+}
+
+.pay-steps[open] summary::after {
+    transform: rotate(180deg)
+}
+
+.pay-steps ol {
+    margin: 0;
+    padding: 0 14px 12px 32px
+}
+
+.pay-steps li {
+    padding: 6px 0;
+    border-top: 1px dashed var(--line)
+}
+
+.pay-steps li span {
+    display: block;
+    color: var(--muted);
+    font-size: .78rem
+}
+
+.pay-steps li strong {
+    color: var(--navy-ink)
+}
+
 .country-link {
     margin-top: auto;
     color: var(--orange-deep);
